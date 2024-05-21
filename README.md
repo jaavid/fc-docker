@@ -6,12 +6,12 @@ It includes configurations for exposing Elasticsearch on port 9200 and Kibana on
 ## Usage
 0. Docker Sanctions:
 
-0.1. use docker.ir proxy : for docker deamon : add "registry-mirrors": ["https://registry.docker.ir"] in /etc/docker/daemon.json
-0.2. use image from proxy : in docker-compose add registry.docker.ir as image perfix, for example image: elasticsearch:8.0.1 ==> image: registry.docker.ir/elasticsearch:8.0.1
-0.3. pull image from other repository for example "sudo docker pull registry.docker.ir/elasticsearch:8.0.1" and add original tag "docker image tag registry.docker.ir/elasticsearch:8.0.1 elasticsearch:8.0.1"
+    0.1. use docker.ir proxy : for docker deamon : add "registry-mirrors": ["https://registry.docker.ir"] in /etc/docker/daemon.json
+    0.2. use image from proxy : in docker-compose add registry.docker.ir as image perfix, for example image: elasticsearch:8.0.1 ==> image: registry.docker.ir/elasticsearch:8.0.1
+    0.3. pull image from other repository for example "sudo docker pull registry.docker.ir/elasticsearch:8.0.1" and add original tag "docker image tag registry.docker.ir/elasticsearch:8.0.1 elasticsearch:8.0.1"
 
 1. Clone this repository:
-git clone <your-github-repo-url> cd <repository-name>
+git clone https://github.com/jaavid/fc-docker.git cd fc-docker
 
 
 2. Start the services:
@@ -30,11 +30,3 @@ docker-compose up -d
 ## Health Check
 
 Elasticsearch's health check runs every 30 seconds to ensure the service is operational.
-
-## License
-
-This project is licensed under the MIT License.
-Replace <your-github-repo-url> and <repository-name> with your actual GitHub repository URL and name.
-
-By following these steps, you'll have a Docker Compose setup for Elasticsearch and Kibana ready to deploy, along with a GitHub repository hosting your project and a README document explaining how to use it.
-
