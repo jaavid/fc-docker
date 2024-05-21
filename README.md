@@ -7,7 +7,9 @@ It includes configurations for exposing Elasticsearch on port 9200 and Kibana on
 0. Docker Sanctions:
 
     0.1. use docker.ir proxy : for docker deamon : add "registry-mirrors": ["https://registry.docker.ir"] in /etc/docker/daemon.json
+    
     0.2. use image from proxy : in docker-compose add registry.docker.ir as image perfix, for example image: elasticsearch:8.0.1 ==> image: registry.docker.ir/elasticsearch:8.0.1
+    
     0.3. pull image from other repository for example "sudo docker pull registry.docker.ir/elasticsearch:8.0.1" and add original tag "docker image tag registry.docker.ir/elasticsearch:8.0.1 elasticsearch:8.0.1"
 
 1. Clone this repository:
